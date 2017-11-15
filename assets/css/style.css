@@ -5,6 +5,30 @@ body {
     box-sizing: border-box;
 }
 
+/*table {
+    border: 1px solid #333;
+}
+
+table.about {
+    width:100%;
+    height: 100%;
+}
+
+table.about.td{
+    width: 100%;
+}*/
+
+.about-page {
+    display: none;
+}
+
+.back-button {
+    position: relative;
+    font-size: 4em;
+    left: 30px;
+    top:10px;
+}
+
 .body {
     position: relative;
     width: 100%;
@@ -84,6 +108,10 @@ body {
     height: 4em;
     text-align: center;
     top: 150px;
+    -webkit-backface-visibility: unset !important;
+    -moz-backface-visibility: unset !important;
+    -o-backface-visibility: unset !important;
+    backface-visibility: unset !important;
 }
 
 .body-text {
@@ -95,4 +123,23 @@ body {
     margin: -150px 0 0 -250px;
 }
 
+.clearfix {
+    clear: both;
+}
+
+.row {
+    padding: 30px;
+    width: 86%;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.row.half {
+    width: 36.8%;
+    margin: 0;
+    float: left;
+}
+.row.half.float {
+    float:left;
+}
 

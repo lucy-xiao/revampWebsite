@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: 'PT Serif', serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.body-about {
+    left: 27%;
+}
+
+.body-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(../img/textured-white-paper.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: .5;
+}
+
+.body-border {
+    position: fixed;
+    width: 95%;
+    height: 95%;
+    margin: 1% 2.5%;
+    border: 3px solid #333;
+}
+
+.body-clickable:hover {
+    color: #72c5ca;
+    cursor:pointer;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.body-divide {
+    left: 50%;
+    color: #555;
+}
+
+.body-detail {
+    position: relative;
+    font-size: 2em;
+    color: #555;
+}
+
+.body-email {
+    top: 150px;
+    text-align: center;
+}
+
+.body-name {
+    font-size: 7em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    border-bottom: 5px solid black;
+}
+
+.body-projects {
+    left:53%;
+}
+
+.body-subtitle {
+    display: inline-block;
+    font-size: 3em;
+    margin: 0 10px;
+}   
+
+.body-subtitle-wrapper {
+    position: relative;
+    width: 100%;
+    height: 4em;
+    text-align: center;
+    top: 150px;
+}
+
+.body-text {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -250px;
+}
+
+

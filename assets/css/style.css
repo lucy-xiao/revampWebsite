@@ -36,6 +36,11 @@ table.about.td{
     font-size: 4em;
     left: 30px;
     top:10px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    color: #555;
 }
 
 .body {

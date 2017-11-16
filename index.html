@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Lucy Xiao</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif|Raleway|Oswald|Consolas|Anonymous+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 <body>
@@ -22,27 +22,13 @@
     <div class="page about-page" id="about">
     	<div class="back-button"><</div>
         <div class="body-text">
-            <!-- <table class="about">
-			  <tr>
-			    <td>About Me</td>
-			  </tr>
-			  <tr>
-			    <td>Software Engineer</td>
-			    <td>Designer</td>
-			  </tr>
-			  <tr>
-			    <td>Computer Science B.S.</td>
-			  </tr>
-			  <tr>
-			    <td>Resume</td>
-			  </tr>
-			</table> -->
-			  <div class="row">About Me</div>
-			  <div class="row half">Software Engineer</div>
-			  <div class="row half float">Designer</div>
+			  <div class="row title">About Me</div>
+			  <!-- Jank trick to get rid of gap for inline-block elements -->
+			  	<div class="row half left">Software Engineer</div
+			  	><div class="row half right">Designer</div>
 			  <div class="clearfix"></div>
-			  <div class="row">Computer Science B.S.</div>
-			  <div class="row">Resume</div>
+			  <div class="row compsci"><p class="line-1 anim-typewriter">Computer Science B.S.</p></div>
+			  <div class="row"><a href="assets/LucyXiao-Resume-Fall2017.pdf" class="resume-link"> Resume</div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

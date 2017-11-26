@@ -141,6 +141,69 @@ a:hover {
     clear: both;
 }
 
+.project-container{
+    position: relative;
+    width: 375px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right:20px;
+    /*background-color: #333;*/
+    /*opacity: 0;*/
+}
+
+.project-thumbnail-overlay {
+    position: absolute;
+    background:rgba(0,0,0,.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .25s ease;
+    opacity: 0;
+    border-radius: 5px;
+}
+
+.project-thumbnail-overlay-text {
+    color: white;
+    font-size: 21px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-page-header{
+    position: relative;
+    font-size: 3em;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.project-wrapper {
+    text-align: center;
+}
+
+.project-thumbnail {
+    display: block;
+    width: 375px;
+    height: 225px;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-container:hover .project-thumbnail-overlay {
+    opacity: 1;
+    cursor: pointer;
+}
+
 .resume-link {
     text-decoration: none;
     color:#333;
@@ -182,7 +245,7 @@ a:hover {
     text-align: center;
     font-weight: bold;
     padding: 13px;
-    font-size: 3em;
+    font-size: 3.9em;
     background: none;
     color: #333;
 }

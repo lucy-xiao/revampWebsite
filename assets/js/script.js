@@ -45,6 +45,6 @@ let projects = [
 for (let project of projects) {
   console.log(project);
   $(".project-wrapper").append("<div class='project-container'><div class='project-thumbnail' id='" + project["id"] + "'></div>" + "<div class='project-thumbnail-overlay'>" + "<div class='project-thumbnail-overlay-text'>" + project["projectTitle"] + "</div></div></div>");
-  $("#" + project["id"]).css("background-image", 'url("' + project["coverImage"] + '")' );
+  $("#" + project["id"]).css("background-image", 'url("' + project["coverImage"] + '") ' );
 }
 

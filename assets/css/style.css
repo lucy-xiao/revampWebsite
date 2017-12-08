@@ -187,18 +187,18 @@ a{
 .project-thumbnail {
     width: 100%;
     height: 100%;
-    /*border: 1px solid black;*/
     border-radius: 5px;
 }
 
 .project-thumbnail.picture {
     display: block;
-    /* border: 1px solid black; */
     margin: 0 auto;
-    /* background-size: 100%; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.project-thumbnail.picture#youtube {
     background-position-x: 5px;
 }
 
@@ -287,6 +287,8 @@ a{
     font-size: 2.8em;
     background: none;
     color: #333;
+    vertical-align: middle;
+    line-height: 72px;
 }
 
 .row.half.right:hover{

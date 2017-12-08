@@ -18,21 +18,12 @@ a{
     color: #333;
 }
 
-a:hover {
-    color: #72c5ca;
-    cursor:pointer;
-    -webkit-transition: color 0.4s;
-    -moz-transition: color 0.4s;
-    -o-transition: color 0.4s;
-    transition: color 0.4s;
-}
-
 .about-page {
     /*display: none;*/
 }
 
 .back-button {
-    position: relative;
+    position: absolute;
     font-size: 4em;
     left: 30px;
     top:10px;
@@ -143,63 +134,110 @@ a:hover {
 
 .project-container{
     position: relative;
-    width: 375px;
+    width: 60%;
+    height: 80%;
     display: inline-block;
     margin-top: 20px;
     margin-right:20px;
+    margin-bottom: 20px;
     /*background-color: #333;*/
     /*opacity: 0;*/
 }
 
-.project-thumbnail-overlay {
-    position: absolute;
-    background:rgba(0,0,0,.75);
+.project-page .back-button {
+    float: left;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
+}
+
+.project-page .back-button a {
+    color: #eee;    
+}
+
+
+.project-page a:hover, a:hover{
+    color: #72c5ca;
+    cursor:pointer;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -o-transition: color 0.4s;
+    transition: color 0.4s;
+}
+
+.project-page-header{
+    position: relative;
+    background-color: #333;
     width: 100%;
-    transition: .25s ease;
-    opacity: 0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.project-page-title{
+    font-size: 3em;
+    display: inline-block;
+    color: #eee;
+    width: auto;
+}
+
+.project-wrapper {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid black;*/
     border-radius: 5px;
 }
 
-.project-thumbnail-overlay-text {
-    color: white;
-    font-size: 21px;
+.project-thumbnail.picture {
+    display: block;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-x: 5px;
+}
+
+.project-thumbnail.overlay {
     position: absolute;
+    background: rgba(0,0,0,.65);
+    top: 50%;
+    left: 50%;
+    height: 100%;
     width: 100%;
-    text-align: center;
+    transition: .25s ease;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.project-thumbnail.overlay-text-container {
+    position: relative;
+    width: 80%;
+    height: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.project-page-header{
-    position: relative;
-    font-size: 3em;
-    width: 300px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.project-wrapper {
+.project-thumbnail.overlay-title {
+    color: white;
+    font-size: 2em;    
+    height: auto;
     text-align: center;
 }
 
-.project-thumbnail {
-    display: block;
-    width: 375px;
-    height: 225px;
-    /*border: 1px solid black;*/
-    border-radius: 5px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+.project-thumbnail.overlay-description {
+    color: #eee;
+    font-size: 1.3em;
+    height: auto;
+    text-align: center;
 }
 
-.project-container:hover .project-thumbnail-overlay {
+.project-container:hover .project-thumbnail.overlay {
     opacity: 1;
     cursor: pointer;
 }
@@ -223,6 +261,7 @@ a:hover {
 
 .row.half {
     width: 300px;
+    height: 100px;
     margin: 0;
 }
 .row.half.left {
@@ -245,7 +284,7 @@ a:hover {
     text-align: center;
     font-weight: bold;
     padding: 13px;
-    font-size: 3.9em;
+    font-size: 2.8em;
     background: none;
     color: #333;
 }

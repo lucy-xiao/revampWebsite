@@ -2,9 +2,9 @@
 let projects = [   
     {
         "projectTitle": "YouTube Clone",
-        "projectDescription": "I made a copy of YouTube's homepage from scratch using HTML+CSS. You can interact with the mock at: ",
+        "projectDescription": "I made a copy of YouTube\'s homepage from scratch using HTML+CSS.",
         "url": "lucy-xiao.github.io/youtube",
-        "coverImage": "assets/img/youtube-screen.png",
+        "coverImage": "assets/img/youtube.png",
         "category": "code",
         "id": "youtube"
     },
@@ -44,7 +44,7 @@ let projects = [
 
 for (let project of projects) {
   console.log(project);
-  $(".project-wrapper").append("<div class='project-container'><div class='project-thumbnail' id='" + project["id"] + "'></div>" + "<div class='project-thumbnail-overlay'>" + "<div class='project-thumbnail-overlay-text'>" + project["projectTitle"] + "</div></div></div>");
+  $(".project-wrapper").append("<div class='project-container'><div class='project-thumbnail picture' id='" + project["id"] + "'></div>" + "<div class='project-thumbnail overlay'>" + "<div class='project-thumbnail overlay-text-container'><div class='project-thumbnail overlay-title'>" + project["projectTitle"] + "</div>" + "<div class='project-thumbnail overlay-description'>" + project["projectDescription"] + "</div></div></div></div>");
   $("#" + project["id"]).css("background-image", 'url("' + project["coverImage"] + '") ' );
 }
 
